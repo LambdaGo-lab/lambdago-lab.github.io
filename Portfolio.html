@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="./assets/portfolio/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <header id="header">
+    <!-- <h1 id="name">
+      <a href="https://zclarke.dev/index.html">Lambdago</a>
+    </h1>
+    <div id="headerImg">
+      <img src="./assets/portfolio/.png" alt="LambdaGo">
+    </div>
+    <div id="contact">
+      <span><a href="mailto:Lambdago-lab@gmail.com">Lambdago-lab@gmail.com</a></span>
+      <span><a href="tel:8453186718">1(845)318-6718</a></span>
+    </div> -->
+  </header>
+
+  <script>
+    function showImg(img) {
+      document.getElementById("imgZoomImg").src = img;
+      document.getElementById("imgZoom").style.display = "block";
+    }
+    function hideImg() {
+      document.getElementById("imgZoom").style.display = "none";
+    }
+  </script>
+
+  <div id="main">
+
+    <div id="imgZoom">
+      <p onclick="hideImg()">✕</p>
+      <img id="imgZoomImg" src="./assets/portfolio/codely.png">
+    </div>
+
+    <!-- Teapot LLM -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Teapot LLM</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://teapotai.com/" target="_blank"><img src="./assets/portfolio/www.png"></a>
+            <a class="icon" href="https://huggingface.co/teapotai/teapotllm" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2025</b></p>
+          <ul>
+            <li>Large Language Models</li>
+            <li>Retrieval Augmented Generation</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/python.svg">
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Teapotllm is an open-source fine tuned ~800M parameter language model optimized for hallucination resistant QnA on CPU and mobile devices.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/teapot_graph.png')"><img src="./assets/portfolio/teapot_graph.png"></span>
+      </div>
+      <div class="additionalImage">
+        <span onclick="showImg('./assets/teapot_downloads.png')"><img src="./assets/portfolio/teapot_downloads.png"></span>
+      </div>
+    </div>
+
+    <!-- Behavioral Vital Sign Patent -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Behavioral Vital Sign Identification in SMI Patients — Patent</h1>
+        <div class="info">
+          <p><b class="portfolioYear">2023</b></p>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Healthcare</li>
+            <li>Patent</li>
+          </ul>
+          <div><img class="iconTech" src="./assets/portfolio/python.svg"></div>
+        </div>
+        <div class="description">
+          <p>Built a system to identify important passively sensed features for remote patient monitoring, including insights &amp; interventions. Filed patent with core intellectual property.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/Patent.png')"><img src="./assets/portfolio/Patent.png"></span>
+      </div>
+    </div>
+
+    <!-- NYC AI Traffic Camera Analysis -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>NYC AI Traffic Camera Analysis</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/nyc_ai_traffic_camera_analysis" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2024</b></p>
+          <ul>
+            <li>Object Recognition</li>
+            <li>GPU</li>
+          </ul>
+          <div><img class="iconTech" src="./assets/portfolio/python.svg"></div>
+        </div>
+        <div class="description">
+          <p>Leveraging object recognition models to analyze traffic patterns from NYC's free traffic camera API.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('https://raw.githubusercontent.com/Lambdago-lab/nyc_ai_traffic_camera_analysis/refs/heads/main/bridge.png')"><img src="./assets/portfolio/bridge.png"></span>
+      </div>
+    </div>
+
+    <!-- Apartment Rent Predictor -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Apartment Rent Predictor</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/Apartment_Rent_Analysis" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2020</b></p>
+          <ul>
+            <li>Neural Network</li>
+            <li>Data Analytics</li>
+            <li>Machine Learning</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/python.svg">
+            <img class="iconTech" src="./assets/portfolio/node.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Created a model to predict rent prices and apartment occupancy from relevant features. Resulted in a model with less than 5% error rate using ensemble machine learning methods.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/apartment.png')"><img src="./assets/portfolio/apartment.png"></span>
+      </div>
+    </div>
+
+    <!-- Weave Language -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Weave Language</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/weavelang" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2020</b></p>
+          <ul>
+            <li>Functional Programming</li>
+            <li>Compilers</li>
+            <li>Imperative Style</li>
+          </ul>
+          <div><img class="iconTech" src="./assets/portfolio/haskell.svg"></div>
+        </div>
+        <div class="description">
+          <p>Programming Language created in less than a month for the REPL.it coding Jam. Features type inference, functional evaluation and C-like syntax.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/weave.png')"><img src="./assets/portfolio/weave.png"></span>
+      </div>
+    </div>
+
+    <!-- Sports Analysis Tracker -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Sports Analysis Tracker</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/sports_analysis" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2022</b></p>
+          <ul>
+            <li>Image Recognition</li>
+            <li>Physics Simulation</li>
+          </ul>
+          <div><img class="iconTech" src="./assets/portfolio/python.svg"></div>
+        </div>
+        <div class="description">
+          <p>Python library that makes it easy to annotate and track physics objects in videos. Simply supply a configuration file and video, and the model will output annotated footage that can track objects and their velocities.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/sports_analysis.gif')"><img src="./assets/portfolio/sports_analysis.gif"></span>
+      </div>
+    </div>
+
+    <!-- E-Center -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>E-Center</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://ecenter.tv/" target="_blank"><img src="./assets/portfolio/www.png"></a>
+          </div>
+          <p><b>Co-Founder</b></p>
+          <p><b class="portfolioYear">2019</b></p>
+          <ul>
+            <li>Image Recognition</li>
+            <li>Data Scraping</li>
+            <li>API Development</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/node.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>E-Sports Statistics Platform focused on improving player performance through informed statistics. AI/ML Video Recognition technology used to analyze performance.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/ecenterhome.png')"><img src="./assets/portfolio/ecenterhome.png"></span>
+      </div>
+      <div class="additionalImage">
+        <span onclick="showImg('./assets/portfolio/ecenterstats.png')"><img src="./assets/portfolio/ecenterstats.png"></span>
+      </div>
+    </div>
+
+    <!-- Sara.ai -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Sara.ai</h1>
+        <div class="info">
+          <p><b class="portfolioYear">2018</b></p>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Artificial Intelligence</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/node.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Context aware chatbot trained to answer questions from Wikipedia articles.</p>
+        </div>
+      </div>
+      <div class="image">
+        <span onclick="showImg('./assets/portfolio/sara.png')"><img src="./assets/portfolio/sara.png"></span>
+      </div>
+      <div class="additionalImage">
+        <span onclick="showImg('./assets/portfolio/saradialog.png')"><img src="./assets/portfolio/saradialog.png"></span>
+      </div>
+      <div class="mobileImage">
+        <span onclick="showImg('./assets/portfolio/saramobile.png')"><img src="./assets/portfolio/saramobile.png"></span>
+      </div>
+    </div>
+
+    <!-- Solomon.ai -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Solomon.ai</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/solomon" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2020</b></p>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Data Analytics</li>
+            <li>Neural Networks</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Created tool to automatically clean and visualize data, and build machine learning models.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/solomon.png')"><img src="./assets/portfolio/solomon.png"></span>
+      </div>
+      <div class="additionalImage">
+        <span onclick="showImg('./assets/portfolio/solomon.gif')"><img src="./assets/portfolio/solomon.gif"></span>
+      </div>
+    </div>
+
+    <!-- NLP Chess -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>NLP Chess</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/nlpchess" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2022</b></p>
+          <ul>
+            <li>Natural Language Processing</li>
+            <li>Transfer Learning</li>
+          </ul>
+          <div><img class="iconTech" src="./assets/portfolio/python.svg"></div>
+        </div>
+        <div class="description">
+          <p>Language Models have been used for a variety of tasks — text generation, translation, etc. Let's take advantage of that to build a Chess Engine using GPT-3.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/nlpchess.png')"><img src="./assets/portfolio/nlpchess.png"></span>
+      </div>
+    </div>
+
+    <!-- Quantum Circuit Simulator -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Quantum Circuit Simulator</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/quantum-circuit-simulator" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2020</b></p>
+          <ul>
+            <li>Quantum Computing</li>
+            <li>Data Analytics</li>
+            <li>Statistics</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>NodeJS library that can simulate quantum algorithms on traditional hardware. Functional DSL includes all common quantum gates and is highly extensible.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/quantum.png')"><img src="./assets/portfolio/quantum.png"></span>
+      </div>
+    </div>
+
+    <!-- Chatbot.js -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Chatbot.js</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/chatbot.js" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2017</b></p>
+          <ul>
+            <li>Artificial Intelligence</li>
+            <li>Embedded Applications</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Chatbot framework for construction of intelligent agents. Can be used to offload service requests with easy to use syntax.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/chatbot.png')"><img src="./assets/portfolio/chatbot.png"></span>
+      </div>
+    </div>
+
+    <!-- Computational Paper -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Computational Paper</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/computationalPaper" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2021</b></p>
+          <ul>
+            <li>Image Recognition</li>
+            <li>Machine Learning</li>
+            <li>Numerical Computation</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Drawing app that utilizes machine learning and handwriting recognition to evaluate mathematical expressions. Also supports graphing and numerical computation.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/computationalPaper.gif')"><img src="./assets/portfolio/computationalPaper.gif"></span>
+      </div>
+    </div>
+
+    <!-- Codely -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Codely</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="http://codely-dev.herokuapp.com/" target="_blank"><img src="./assets/portfolio/www.png"></a>
+            <a class="icon" href="https://github.com/Lambdago-lab/codely" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2019</b></p>
+          <ul>
+            <li>Web IDE</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+            <img class="iconTech" src="./assets/portfolio/node.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Codely is an integrated web IDE that allows for the live coding of JS apps. Code can be shared by simply copy/pasting the URL on any codely page.</p>
+        </div>
+      </div>
+      <div class="image">
+        <span onclick="showImg('./assets/portfolio/codely.png')"><img src="./assets/portfolio/codely.png"></span>
+      </div>
+      <div class="mobileImage">
+        <span onclick="showImg('./assets/portfolio/codelymobile.png')"><img src="./assets/portfolio/codelymobile.png"></span>
+      </div>
+    </div>
+
+    <!-- Feisty -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Feisty</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/feisty" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2019</b></p>
+          <ul>
+            <li>Charting</li>
+            <li>Statistical Methods</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Smart chart rendering for large sets of data. Preserves maxes, mins and other general trends on zoom.</p>
+        </div>
+      </div>
+      <div class="image">
+        <span onclick="showImg('./assets/portfolio/feisty.png')"><img src="./assets/portfolio/feisty.png"></span>
+      </div>
+      <div class="mobileImage">
+        <span onclick="showImg('./assets/portfolio/feistymobile.png')"><img src="./assets/portfolio/feistymobile.png"></span>
+      </div>
+    </div>
+
+    <!-- Smart Mirror -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Smart Mirror</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/smart-mirror" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2018</b></p>
+          <ul>
+            <li>API Integration</li>
+            <li>Minimal Design</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <span onclick="showImg('./assets/portfolio/smart-mirror.png')"><img src="./assets/portfolio/smart-mirror.png"></span>
+      </div>
+      <div class="mobileImage">
+        <span onclick="showImg('./assets/portfolio/mirrormobile.png')"><img src="./assets/portfolio/mirrormobile.png"></span>
+      </div>
+    </div>
+
+    <!-- E-TransControl -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>E-TransControl</h1>
+        <div class="info">
+          <p><b class="portfolioYear">2017</b></p>
+          <ul>
+            <li>Microcontroller</li>
+            <li>Hardware Programming</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/wordpress.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Kit builder for after-market transmission controllers and various car modifications.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/etranscontrol.png')"><img src="./assets/portfolio/etranscontrol.png"></span>
+      </div>
+      <div class="additionalImage">
+        <span onclick="showImg('./assets/portfolio/etranscontrolkitbuilder.png')"><img src="./assets/portfolio/etranscontrolkitbuilder.png"></span>
+      </div>
+    </div>
+
+    <!-- Dingo.js Framework -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Dingo.js Framework</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/dingojs" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2017</b></p>
+          <ul>
+            <li>Image Recognition</li>
+            <li>Data Scraping</li>
+            <li>API Development</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+          </div>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/dingo.png')"><img src="./assets/portfolio/dingo.png"></span>
+      </div>
+      <div class="additionalImage">
+        <span onclick="showImg('./assets/portfolio/dingodocs.png')"><img src="./assets/portfolio/dingodocs.png"></span>
+      </div>
+    </div>
+
+    <!-- Azulejos -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Azulejos</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/azulejos" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2018</b></p>
+          <ul>
+            <li>Tile Based Board Game</li>
+            <li>Animations and Effects</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+          </div>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/azulejos.png')"><img src="./assets/portfolio/azulejos.png"></span>
+      </div>
+    </div>
+
+    <!-- Stack Calc -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Stack Calc</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/stackcalc" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2018</b></p>
+          <ul>
+            <li>Stack Based Calculator</li>
+            <li>General Calculations</li>
+            <li>Programmable Functions</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+          </div>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/stackcalc.png')"><img src="./assets/portfolio/stackcalc.png"></span>
+      </div>
+    </div>
+
+    <!-- Genetic.js -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Genetic.js</h1>
+        <div class="info">
+          <div>
+            <a class="icon" href="https://github.com/Lambdago-lab/geneticjs" target="_blank"><img src="./assets/portfolio/github.svg"></a>
+          </div>
+          <p><b class="portfolioYear">2019</b></p>
+          <ul>
+            <li>Genetic Algorithms</li>
+            <li>Machine Learning</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>Genetic algorithm library for native JS. Easily abstract complex genetic algorithms into simple wrappers for machine learning and AI projects.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/geneticjs.png')"><img src="./assets/portfolio/geneticjs.png"></span>
+      </div>
+    </div>
+
+    <!-- Escher -->
+    <div class="portfolio">
+      <div class="infoBox">
+        <h1>Escher</h1>
+        <div class="info">
+          <p><b class="portfolioYear">2017</b></p>
+          <ul>
+            <li>Unique Gameplay</li>
+            <li>Custom Physics Engine</li>
+          </ul>
+          <div>
+            <img class="iconTech" src="./assets/portfolio/html5.svg">
+            <img class="iconTech" src="./assets/portfolio/css3.svg">
+            <img class="iconTech" src="./assets/portfolio/js.svg">
+          </div>
+        </div>
+        <div class="description">
+          <p>A mind-bending game built around a physics engine resembling the famous M.C. Escher's artwork.</p>
+        </div>
+      </div>
+      <div class="image noMobileFlag">
+        <span onclick="showImg('./assets/portfolio/escher.png')"><img src="./assets/portfolio/escher.png"></span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
