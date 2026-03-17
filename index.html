@@ -24,710 +24,225 @@
     </div> -->
   </header>
 
-  <script>
-    function showImg(img) {
-      document.getElementById("imgZoomImg").src = img;
-      document.getElementById("imgZoom").style.display = "block";
-    }
-    function hideImg() {
-      document.getElementById("imgZoom").style.display = "none";
-    }
-  </script>
+  <!-- Image Zoom Overlay -->
+  <div id="imgZoom" onclick="hideImg()">
+    <p>✕</p>
+    <img id="imgZoomImg" src="">
+  </div>
 
   <div id="main">
+    <div class="projects-grid">
 
-    <div id="imgZoom">
-      <p onclick="hideImg()">✕</p>
-      <img id="imgZoomImg" src="./assets/portfolio/codely.png">
-    </div>
+      <!-- Teapot LLM -->
+      <div class="project-card">
+        <div class="carousel" data-count="2">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="./assets/projects/teapot-llm/1.png" alt="Teapot LLM benchmark graph"></div>
+            <div class="carousel-slide"><img src="./assets/projects/teapot-llm/2.png" alt="Teapot LLM downloads"></div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Teapot LLM</h2>
+            <div class="card-links">
+              <a href="https://teapotai.com/" target="_blank"><img src="./assets/portfolio/www.png" alt="Website"></a>
+              <a href="https://huggingface.co/teapotai/teapotllm" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"></a>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">LLM</span>
+            <span class="tag">RAG</span>
+          </div>
+          <p class="card-description">Teapot LLM is an open-source fine-tuned ~800M parameter language model optimized for hallucination-resistant question answering on CPU and mobile devices. Built for production environments where accuracy matters more than creativity, it delivers reliable extractive QA with minimal compute overhead.</p>
+        </div>
+      </div>
 
-    <!-------------- 2025 -------------->
-    <!-- Teapot LLM -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Teapot LLM</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://teapotai.com/" target="_blank"><img src="./assets/portfolio/www.png"></a>
-            <a class="icon" href="https://huggingface.co/teapotai/teapotllm" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
+      <!-- LLM Multi-Agent Chat -->
+      <div class="project-card">
+        <div class="carousel" data-count="2">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="./assets/projects/llm-multi-agent-chat/1.png" alt="Chat UI"></div>
+            <div class="carousel-slide"><img src="./assets/projects/llm-multi-agent-chat/2.png" alt="Orchestration diagram"></div>
           </div>
-          <p><b class="portfolioYear">2025</b></p>
-          <ul>
-            <li>Large Language Models</li>
-            <li>Retrieval Augmented Generation</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
+          <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <h2>LLM Multi-Agent Chat</h2>
+            <div class="card-links">
+              <a href="https://github.com/Bambuuai/llm-rag-mcp-orchestrator" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"></a>
+            </div>
           </div>
+          <div class="card-tags">
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">RAG</span>
+            <span class="tag">MCP</span>
+            <span class="tag">Orchestration</span>
+            <span class="tag">Streaming</span>
+          </div>
+          <p class="card-description">An open-source multi-agent chat system featuring LLM-based orchestration with intent routing, response evaluation, and safety moderation. Supports RAG-powered knowledge retrieval, MCP-based tool calling (finance, weather, web search), and real-time streaming via SSE. Compatible with Ollama, Gemini, Claude, and ChatGPT — configurable entirely through YAML.</p>
         </div>
-        <div class="description">
-          <p>Teapotllm is an open-source fine tuned ~800M parameter language model optimized for hallucination resistant QnA on CPU and mobile devices.</p>
-        </div>
       </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/teapot_graph.png')"><img src="./assets/portfolio/teapot_graph.png"></span>
-      </div>
-      <div class="additionalImage">
-        <span onclick="showImg('./assets/portfolio/teapot_downloads.png')"><img src="./assets/portfolio/teapot_downloads.png"></span>
-      </div>
-    </div>
 
-    <!-- LLM-RAG-MCP-Ochestrator -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>LLM Multi-Agent Chat</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Bambuuai/llm-rag-mcp-orchestrator" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
+      <!-- NYC AI Traffic Camera Analysis -->
+      <div class="project-card">
+        <div class="carousel" data-count="1">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="./assets/projects/nyc-traffic-camera/1.png" alt="NYC traffic analysis"></div>
           </div>
-          <p><b class="portfolioYear">2025</b></p>
-          <ul>
-            <li>Multi-Agent Systems</li>
-            <li>Large Language Models</li>
-            <li>Retrieval Augmented Generation</li>
-            <li>Model Context Protocol</li>
-            <li>LLM Orchestration</li>
-            <li>Tool Calling</li>
-            <li>Real-Time Streaming</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  width="30"/>            
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="30"/>
-          </div>
+          <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+          <div class="carousel-dots"></div>
         </div>
-        <div class="description">
-          <p>Teapotllm is an open-source fine tuned ~800M parameter language model optimized for hallucination resistant QnA on CPU and mobile devices.</p>
+        <div class="card-body">
+          <div class="card-header">
+            <h2>NYC AI Traffic Camera Analysis</h2>
+            <div class="card-links">
+              <a href="https://github.com/Lambdago-lab/nyc_ai_traffic_camera_analysis" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"></a>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Object Detection</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">GPU</span>
+          </div>
+          <p class="card-description">Leveraging state-of-the-art object recognition models to analyze real-time traffic patterns from NYC's public traffic camera API. The system processes live camera feeds, detects and classifies vehicles, and generates actionable traffic flow analytics for urban planning and congestion monitoring.</p>
         </div>
       </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/llm-orch-chat-ui.png')"><img src="./assets/portfolio/llm-orch-chat-ui.png"></span>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/llm-orch-orchestration.png')"><img src="./assets/portfolio/llm-orch-orchestration.png"></span>
-      </div>
-    </div>
 
-    <!-------------- 2024 -------------->
-    <!-- NYC AI Traffic Camera Analysis -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>NYC AI Traffic Camera Analysis</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/nyc_ai_traffic_camera_analysis" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
+      <!-- Sports Analysis Tracker -->
+      <div class="project-card">
+        <div class="carousel" data-count="1">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="./assets/projects/sports-analysis/1.gif" alt="Sports analysis demo"></div>
           </div>
-          <p><b class="portfolioYear">2024</b></p>
-          <ul>
-            <li>Object Recognition</li>
-            <li>GPU</li>
-          </ul>
-          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  width="30"/></div>
+          <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+          <div class="carousel-dots"></div>
         </div>
-        <div class="description">
-          <p>Leveraging object recognition models to analyze traffic patterns from NYC's free traffic camera API.</p>
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Sports Analysis Tracker</h2>
+            <div class="card-links">
+              <a href="https://github.com/Lambdago-lab/sports_analysis" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"></a>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Image Recognition</span>
+            <span class="tag">Physics Simulation</span>
+            <span class="tag">Video Processing</span>
+          </div>
+          <p class="card-description">A Python library for automated annotation and tracking of physics objects in video footage. Supply a configuration file and video input, and the model outputs annotated footage with real-time object tracking and velocity estimation — enabling detailed sports performance analysis and motion studies.</p>
         </div>
       </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('https://raw.githubusercontent.com/Lambdago-lab/nyc_ai_traffic_camera_analysis/refs/heads/main/bridge.png')"><img src="./assets/portfolio/bridge.png"></span>
-      </div>
-    </div>
 
-    <!-------------- 2023 -------------->
-    <!-- Behavioral Vital Sign Patent -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Behavioral Vital Sign Identification in SMI Patients — Patent</h1>
-        <div class="info">
-          <p><b class="portfolioYear">2023</b></p>
-          <ul>
-            <li>Machine Learning</li>
-            <li>Healthcare</li>
-            <li>Patent</li>
-          </ul>
-          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  width="30"/></div>
+      <!-- Weave Language -->
+      <div class="project-card">
+        <div class="carousel" data-count="1">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="./assets/projects/weave-language/1.png" alt="Weave Language"></div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+          <div class="carousel-dots"></div>
         </div>
-        <div class="description">
-          <p>Built a system to identify important passively sensed features for remote patient monitoring, including insights &amp; interventions. Filed patent with core intellectual property.</p>
+        <div class="card-body">
+          <div class="card-header">
+            <h2>Weave Language</h2>
+            <div class="card-links">
+              <a href="https://github.com/Lambdago-lab/weavelang" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"></a>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Functional Programming</span>
+            <span class="tag">Compilers</span>
+          </div>
+          <p class="card-description">A custom programming language built in under a month for the REPL.it Coding Jam. Weave features type inference, functional evaluation semantics, and a C-like syntax — demonstrating end-to-end language design from lexer and parser to interpreter and runtime.</p>
         </div>
       </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/Patent.png')"><img src="./assets/portfolio/Patent.png"></span>
-      </div>
-    </div>
 
-    <!-------------- 2022 -------------->
-    <!-- Sports Analysis Tracker -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Sports Analysis Tracker</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/sports_analysis" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
+      <!-- E-Center -->
+      <div class="project-card">
+        <div class="carousel" data-count="2">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="./assets/projects/e-center/1.png" alt="E-Center home"></div>
+            <div class="carousel-slide"><img src="./assets/projects/e-center/2.png" alt="E-Center stats"></div>
           </div>
-          <p><b class="portfolioYear">2022</b></p>
-          <ul>
-            <li>Image Recognition</li>
-            <li>Physics Simulation</li>
-          </ul>
-          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  width="30"/></div>
+          <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Next">&#8250;</button>
+          <div class="carousel-dots"></div>
         </div>
-        <div class="description">
-          <p>Python library that makes it easy to annotate and track physics objects in videos. Simply supply a configuration file and video, and the model will output annotated footage that can track objects and their velocities.</p>
+        <div class="card-body">
+          <div class="card-header">
+            <h2>E-Center</h2>
+            <div class="card-links">
+              <a href="https://ecenter.tv/" target="_blank"><img src="./assets/portfolio/www.png" alt="Website"></a>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="tag">Image Recognition</span>
+            <span class="tag">Data Scraping</span>
+            <span class="tag">API Development</span>
+          </div>
+          <p class="card-description">An e-sports statistics platform focused on improving player performance through data-driven insights. Combines AI/ML video recognition technology with automated data scraping pipelines to analyze gameplay footage and deliver actionable performance metrics at scale.</p>
         </div>
       </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/sports_analysis.gif')"><img src="./assets/portfolio/sports_analysis.gif"></span>
-      </div>
-    </div>
 
-    <!-- NLP Chess -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>NLP Chess</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/nlpchess" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2022</b></p>
-          <ul>
-            <li>Natural Language Processing</li>
-            <li>Transfer Learning</li>
-          </ul>
-          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  width="30"/></div>
-        </div>
-        <div class="description">
-          <p>Language Models have been used for a variety of tasks — text generation, translation, etc. Let's take advantage of that to build a Chess Engine using GPT-3.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/nlpchess.png')"><img src="./assets/portfolio/nlpchess.png"></span>
-      </div>
-    </div>
+    </div><!-- /.projects-grid -->
+  </div><!-- /#main -->
 
-    <!-------------- 2021 -------------->
-    <!-- Computational Paper -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Computational Paper</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/computationalPaper" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2021</b></p>
-          <ul>
-            <li>Image Recognition</li>
-            <li>Machine Learning</li>
-            <li>Numerical Computation</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>Drawing app that utilizes machine learning and handwriting recognition to evaluate mathematical expressions. Also supports graphing and numerical computation.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/computationalPaper.gif')"><img src="./assets/portfolio/computationalPaper.gif"></span>
-      </div>
-    </div>
+  <script>
+    // Image zoom
+    function showImg(src) {
+      document.getElementById('imgZoomImg').src = src;
+      document.getElementById('imgZoom').style.display = 'block';
+    }
+    function hideImg() {
+      document.getElementById('imgZoom').style.display = 'none';
+    }
 
-    <!-------------- 2020 -------------->
-    <!-- Apartment Rent Predictor -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Apartment Rent Predictor</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/Apartment_Rent_Analysis" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2020</b></p>
-          <ul>
-            <li>Neural Network</li>
-            <li>Data Analytics</li>
-            <li>Machine Learning</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-          </div>
-        </div>
-        <div class="description">
-          <p>Created a model to predict rent prices and apartment occupancy from relevant features. Resulted in a model with less than 5% error rate using ensemble machine learning methods.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/apartment.png')"><img src="./assets/portfolio/apartment.png"></span>
-      </div>
-    </div>
+    // Carousel logic
+    document.querySelectorAll('.carousel').forEach(carousel => {
+      const track = carousel.querySelector('.carousel-track');
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      const dotsContainer = carousel.querySelector('.carousel-dots');
+      const count = slides.length;
+      let current = 0;
 
-    <!-- Weave Language -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Weave Language</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/weavelang" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2020</b></p>
-          <ul>
-            <li>Functional Programming</li>
-            <li>Compilers</li>
-            <li>Imperative Style</li>
-          </ul>
-          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/haskell/haskell-original.svg" width="30"/>   </div>
-        </div>
-        <div class="description">
-          <p>Programming Language created in less than a month for the REPL.it coding Jam. Features type inference, functional evaluation and C-like syntax.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/weave.png')"><img src="./assets/portfolio/weave.png"></span>
-      </div>
-    </div>
+      // Build dot indicators
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.classList.add('carousel-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+      });
 
-    <!-- Parrot 2000 -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Parrot 2000</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Bambuuai/parrot_2000" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2020</b></p>
-          <ul>
-            <li>object-detection</li>
-            <li>computer-vision</li>
-            <li>detectron2</li>
-            <li>pytorch</li>
-            <li>deep-learning</li>
-            <li>transfer-learning</li>
-            <li>open-images-dataset</li>
-            <li>weights-and-biases</li>
-          </ul>
-          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" width="30"/></div>
-        </div>
-        <div class="description">
-          <p>A custom object detection project built on Facebook's Detectron2 framework, trained to detect parrots in images and video. Serves as a reusable template for fine-tuning Detectron2 models on new image classes using Google's Open Images Dataset, with Weights & Biases integration for experiment tracking.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/parrot.gif')"><img src="./assets/portfolio/parrot.gif"></span>
-      </div>
-    </div>
+      function goTo(index) {
+        current = (index + count) % count;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+      }
 
-    <!-- Solomon.ai -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Solomon.ai</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/solomon" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2020</b></p>
-          <ul>
-            <li>Machine Learning</li>
-            <li>Data Analytics</li>
-            <li>Neural Networks</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>Created tool to automatically clean and visualize data, and build machine learning models.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/solomon.png')"><img src="./assets/portfolio/solomon.png"></span>
-      </div>
-      <div class="additionalImage">
-        <span onclick="showImg('./assets/portfolio/solomon.gif')"><img src="./assets/portfolio/solomon.gif"></span>
-      </div>
-    </div>
+      carousel.querySelector('.carousel-btn.prev').addEventListener('click', () => goTo(current - 1));
+      carousel.querySelector('.carousel-btn.next').addEventListener('click', () => goTo(current + 1));
 
-    <!-- Quantum Circuit Simulator -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Quantum Circuit Simulator</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/quantum-circuit-simulator" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2020</b></p>
-          <ul>
-            <li>Quantum Computing</li>
-            <li>Data Analytics</li>
-            <li>Statistics</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>NodeJS library that can simulate quantum algorithms on traditional hardware. Functional DSL includes all common quantum gates and is highly extensible.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/quantum.png')"><img src="./assets/portfolio/quantum.png"></span>
-      </div>
-    </div>
-
-    <!-------------- 2019 -------------->
-    <!-- E-Center -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>E-Center</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://ecenter.tv/" target="_blank"><img src="./assets/portfolio/www.png"></a>
-          </div>
-          <p><b>Co-Founder</b></p>
-          <p><b class="portfolioYear">2019</b></p>
-          <ul>
-            <li>Image Recognition</li>
-            <li>Data Scraping</li>
-            <li>API Development</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>E-Sports Statistics Platform focused on improving player performance through informed statistics. AI/ML Video Recognition technology used to analyze performance.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/ecenterhome.png')"><img src="./assets/portfolio/ecenterhome.png"></span>
-      </div>
-      <div class="additionalImage">
-        <span onclick="showImg('./assets/portfolio/ecenterstats.png')"><img src="./assets/portfolio/ecenterstats.png"></span>
-      </div>
-    </div>
-
-    <!-- Codely -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Codely</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="http://codely-dev.herokuapp.com/" target="_blank"><img src="./assets/portfolio/www.png"></a>
-            <a class="icon" href="https://github.com/Lambdago-lab/codely" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2019</b></p>
-          <ul>
-            <li>Web IDE</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>Codely is an integrated web IDE that allows for the live coding of JS apps. Code can be shared by simply copy/pasting the URL on any codely page.</p>
-        </div>
-      </div>
-      <div class="image">
-        <span onclick="showImg('./assets/portfolio/codely.png')"><img src="./assets/portfolio/codely.png"></span>
-      </div>
-      <div class="mobileImage">
-        <span onclick="showImg('./assets/portfolio/codelymobile.png')"><img src="./assets/portfolio/codelymobile.png"></span>
-      </div>
-    </div>
-
-    <!-- Feisty -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Feisty</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/feisty" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2019</b></p>
-          <ul>
-            <li>Charting</li>
-            <li>Statistical Methods</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>Smart chart rendering for large sets of data. Preserves maxes, mins and other general trends on zoom.</p>
-        </div>
-      </div>
-      <div class="image">
-        <span onclick="showImg('./assets/portfolio/feisty.png')"><img src="./assets/portfolio/feisty.png"></span>
-      </div>
-      <div class="mobileImage">
-        <span onclick="showImg('./assets/portfolio/feistymobile.png')"><img src="./assets/portfolio/feistymobile.png"></span>
-      </div>
-    </div>
-
-    <!-- Genetic.js -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Genetic.js</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/geneticjs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2019</b></p>
-          <ul>
-            <li>Genetic Algorithms</li>
-            <li>Machine Learning</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>Genetic algorithm library for native JS. Easily abstract complex genetic algorithms into simple wrappers for machine learning and AI projects.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/geneticjs.png')"><img src="./assets/portfolio/geneticjs.png"></span>
-      </div>
-    </div>
-
-    <!-------------- 2018 -------------->
-    <!-- Sara.ai -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Sara.ai</h1>
-        <div class="info">
-          <p><b class="portfolioYear">2018</b></p>
-          <ul>
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-          </div>
-        </div>
-        <div class="description">
-          <p>Context aware chatbot trained to answer questions from Wikipedia articles.</p>
-        </div>
-      </div>
-      <div class="image">
-        <span onclick="showImg('./assets/portfolio/sara.png')"><img src="./assets/portfolio/sara.png"></span>
-      </div>
-      <div class="additionalImage">
-        <span onclick="showImg('./assets/portfolio/saradialog.png')"><img src="./assets/portfolio/saradialog.png"></span>
-      </div>
-      <div class="mobileImage">
-        <span onclick="showImg('./assets/portfolio/saramobile.png')"><img src="./assets/portfolio/saramobile.png"></span>
-      </div>
-    </div>
-
-    <!-- Smart Mirror -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Smart Mirror</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/smart-mirror" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2018</b></p>
-          <ul>
-            <li>API Integration</li>
-            <li>Minimal Design</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-          </div>
-        </div>
-      </div>
-      <div class="image">
-        <span onclick="showImg('./assets/portfolio/smart-mirror.png')"><img src="./assets/portfolio/smart-mirror.png"></span>
-      </div>
-      <div class="mobileImage">
-        <span onclick="showImg('./assets/portfolio/mirrormobile.png')"><img src="./assets/portfolio/mirrormobile.png"></span>
-      </div>
-    </div>
-
-    <!-- Azulejos -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Azulejos</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/azulejos" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2018</b></p>
-          <ul>
-            <li>Tile Based Board Game</li>
-            <li>Animations and Effects</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-          </div>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/azulejos.png')"><img src="./assets/portfolio/azulejos.png"></span>
-      </div>
-    </div>
-
-    <!-- Stack Calc -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Stack Calc</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/stackcalc" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2018</b></p>
-          <ul>
-            <li>Stack Based Calculator</li>
-            <li>General Calculations</li>
-            <li>Programmable Functions</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-          </div>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/stackcalc.png')"><img src="./assets/portfolio/stackcalc.png"></span>
-      </div>
-    </div>
-
-    <!-------------- 2017 -------------->
-    <!-- Chatbot.js -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Chatbot.js</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/chatbot.js" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2017</b></p>
-          <ul>
-            <li>Artificial Intelligence</li>
-            <li>Embedded Applications</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>Chatbot framework for construction of intelligent agents. Can be used to offload service requests with easy to use syntax.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/chatbot.png')"><img src="./assets/portfolio/chatbot.png"></span>
-      </div>
-    </div>
-
-    <!-- E-TransControl -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>E-TransControl</h1>
-        <div class="info">
-          <p><b class="portfolioYear">2017</b></p>
-          <ul>
-            <li>Microcontroller</li>
-            <li>Hardware Programming</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>Kit builder for after-market transmission controllers and various car modifications.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/etranscontrol.png')"><img src="./assets/portfolio/etranscontrol.png"></span>
-      </div>
-      <div class="additionalImage">
-        <span onclick="showImg('./assets/portfolio/etranscontrolkitbuilder.png')"><img src="./assets/portfolio/etranscontrolkitbuilder.png"></span>
-      </div>
-    </div>
-
-    <!-- Dingo.js Framework -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Dingo.js Framework</h1>
-        <div class="info">
-          <div>
-            <a class="icon" href="https://github.com/Lambdago-lab/dingojs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30"/></a>
-          </div>
-          <p><b class="portfolioYear">2017</b></p>
-          <ul>
-            <li>Image Recognition</li>
-            <li>Data Scraping</li>
-            <li>API Development</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-          </div>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/dingo.png')"><img src="./assets/portfolio/dingo.png"></span>
-      </div>
-      <div class="additionalImage">
-        <span onclick="showImg('./assets/portfolio/dingodocs.png')"><img src="./assets/portfolio/dingodocs.png"></span>
-      </div>
-    </div>
-
-    <!-- Escher -->
-    <div class="portfolio">
-      <div class="infoBox">
-        <h1>Escher</h1>
-        <div class="info">
-          <p><b class="portfolioYear">2017</b></p>
-          <ul>
-            <li>Unique Gameplay</li>
-            <li>Custom Physics Engine</li>
-          </ul>
-          <div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="30"/>    
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="30"/>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"  width="30"/>
-          </div>
-        </div>
-        <div class="description">
-          <p>A mind-bending game built around a physics engine resembling the famous M.C. Escher's artwork.</p>
-        </div>
-      </div>
-      <div class="image noMobileFlag">
-        <span onclick="showImg('./assets/portfolio/escher.png')"><img src="./assets/portfolio/escher.png"></span>
-      </div>
-    </div>
-
-  </div>
+      // Click slide to zoom
+      slides.forEach(slide => {
+        slide.addEventListener('click', () => {
+          const img = slide.querySelector('img');
+          if (img) showImg(img.src);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
